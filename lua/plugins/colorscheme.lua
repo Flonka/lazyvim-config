@@ -1,5 +1,5 @@
 return {
-  -- the colorscheme you want
+  -- TODO: Remove this section after 15.x of LazyVim is released
   {
     "catppuccin/nvim",
     opts = function(_, opts)
@@ -10,7 +10,6 @@ return {
       return opts
     end,
   },
-  -- the actual place to configure your desired colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
