@@ -4,6 +4,7 @@ return {
     -- NOTE: using latest n greatest
     branch = "develop",
     opts = {
+      -- NOTE: local selfsigned certificates...
       additional_curl_options = { "--insecure" },
       custom_dynamic_variables = {
         ["$random.email"] = function()
