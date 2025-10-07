@@ -6,7 +6,7 @@ local map = vim.keymap.set
 -- stylua: ignore start
 
 -- floating terminal rebind
--- map("n", "<leader>fT", function() Snacks.terminal() end, { desc = "Terminal (cwd)" })
+map("n", "<leader>fT", function() Snacks.terminal( nil, { cwd = vim.fn.expand("%:p:h") }) end, { desc = "Open Snacks terminal in current buffer's path" })
 -- map("n", "<leader>ft", function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
 map("n", "<c-t>", function() Snacks.terminal(nil, { cwd = LazyVim.root() }) end, { desc = "Terminal (Root Dir)" })
 map("t", "<c-t>", "<cmd>close<cr>", { desc = "Hide Terminal" })
