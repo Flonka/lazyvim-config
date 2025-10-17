@@ -22,6 +22,21 @@ return {
           },
         },
       },
+      -- https://github.com/folke/snacks.nvim/blob/main/docs/zen.md
+      zen = {
+        zoom = {
+          win = {
+            backdrop = true,
+          },
+        },
+      },
+      styles = {
+        zen = {
+          backdrop = {
+            blend = 20,
+          },
+        },
+      },
     },
   },
 }
