@@ -3,7 +3,8 @@ return {
     "mfussenegger/nvim-jdtls",
     opts = {
       root_dir = function(path)
-        return vim.fs.root(0, { "gradlew", "mvnw" })
+        local p = vim.fs.root(0, { "gradlew", "mvnw" })
+        return vim.fn.fnamemodify(p, ":p")
       end,
 
       cmd = (function()
