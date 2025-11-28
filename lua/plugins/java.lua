@@ -33,6 +33,10 @@ return {
               },
             },
           },
+          checkstyle = {
+            enabled = true,
+            configuration = "/Users/flonnqvi/code/cbs/bis/cbs-banking-gradle/cbs-banking-gradle-convention-plugins/src/main/resources/checkstyle/checkstyle.xml",
+          },
         },
       },
     },
