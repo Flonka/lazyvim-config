@@ -37,6 +37,13 @@ return {
             enabled = true,
             configuration = "/Users/flonnqvi/code/cbs/bis/cbs-banking-gradle/cbs-banking-gradle-convention-plugins/src/main/resources/checkstyle/checkstyle.xml",
           },
+          format = {
+            enabled = true,
+            settings = {
+              url = vim.fn.expand("~/crosskey-formatter.xml"),
+              profile = "CrossKey Conventions",
+            },
+          },
         },
       },
     },
