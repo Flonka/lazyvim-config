@@ -1,8 +1,6 @@
 return {
   {
     "mistweaverco/kulala.nvim",
-    -- NOTE: using latest n greatest
-    branch = "develop",
     opts = {
       -- NOTE: local selfsigned certificates...
       additional_curl_options = { "--insecure" },
